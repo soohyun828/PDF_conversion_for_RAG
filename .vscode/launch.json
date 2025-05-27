@@ -5,14 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "PDF converter",
+            "name": "llm",
             "type": "debugpy",
             "request": "launch",
-            "program": "/data/psh68380/repos/RAG_R-D/PDF_Conversion/pdf_to_doc.py",
+            "program": "llm.py",
             "console": "integratedTerminal",
             "args":[
                 "--pdf_path", "./data/test.pdf",
-                "--doc_path", "documents.json"
+                "--doc_path", "documents.json",
+                "--db_directory", "db/test_embedding_db",
             ]
         }
     ]

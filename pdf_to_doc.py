@@ -57,8 +57,8 @@ def load_docs(documents):
     # texts = text_splitter.split_text(documents)  # 한국어 문서를 문장 단위로 분할
     # print(texts[0])
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=300,
-        chunk_overlap=50
+        chunk_size=500,
+        chunk_overlap=100
     )
     # splits = text_splitter.split_documents(documents)
     splits = text_splitter.split_text(documents)
